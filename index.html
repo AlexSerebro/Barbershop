@@ -4,33 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href=""><img src="./img/logo.svg" alt="logo" /></a>
-        <ul>
-          <li><a href=""></a>О нас</li>
-          <li><a href=""></a>Услуги и цены</li>
-          <li><a href=""></a>Мастера</li>
-          <li><a href=""></a>Контакты</li>
+    <header class="header">
+      <nav class="header_nav">
+        <a href="" class="header_logo"
+          ><img src="./img/logo.svg" alt="logo"
+        /></a>
+        <ul class="header_list">
+          <li class="header_item list">
+            <a href="" class="header_link link">О нас</a>
+          </li>
+          <li class="header_item list">
+            <a href="" class="header_link link">Услуги и цены</a>
+          </li>
+          <li class="header_item list">
+            <a href="" class="header_link link">Мастера</a>
+          </li>
+          <li class="header--item list">
+            <a href="" class="header_link link">Контакты</a>
+          </li>
         </ul>
       </nav>
 
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запись</button>
+      <a href="tel:+380441111111" class="header_link header_link-tel link"
+        >+38 044 111 11 11</a
+      >
+      <button type="button" class="header_btn btn">онлайн-запись</button>
     </header>
     <main>
-      <section>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+      <section class="hero">
+        <ul class="hero_list">
+          <li class="hero_item list">
+            <a href="" class="hero_link link">Instagram</a>
+          </li>
+          <li class="hero_item list">
+            <a href="" class="hero_link link">Youtube</a>
+          </li>
         </ul>
         <div>
-          <p>A hair salon for men in Kyiv</p>
-          <h1>BarberShop</h1>
-          <p leng="ru">
+          <p class="pretitle hero_pretitle">A hair salon for men in Kyiv</p>
+          <h1 class="hero_title">BarberShop</h1>
+          <p leng="ru" class="hero_aftertitle aftertitle">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
             со вкусом.
           </p>

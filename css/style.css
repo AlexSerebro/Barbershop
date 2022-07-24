@@ -1,0 +1,108 @@
+:root {
+  --primery-title-color: #ffffff;
+  --secondary-title-color: #303030;
+  --primery-text-color: #555555;
+  --secondary-text-color: #303030;
+  --third-text-color: rgba(157, 164, 189, 0.6);
+  --fourth-text-color: #9da4bd;
+  --accent-color: #ff6c00;
+  --header-text-color: #fff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.header {
+  background-color: gray;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.header_link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-text-color);
+}
+.header_link:hover,
+.header_link:focus {
+  color: var(--accent-color);
+}
+
+.header_link-tel {
+}
+
+.header_btn {
+  color: var(--header-text-color);
+}
+
+.hero_link {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: var(--secondary-text-color);
+}
+
+.hero_link:hover,
+hero_link:focus {
+  color: var(--accent-color);
+}
+
+.pretitle {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero_pretitle {
+  color: var(--third-text-color);
+}
+
+.hero_title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+
+  letter-spacing: 0.05em;
+
+  color: var(--primery-title-color);
+}
+
+.aftertitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.hero_aftertitle {
+  color: var(--fourth-text-color);
+}
