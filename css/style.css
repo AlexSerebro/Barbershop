@@ -8,10 +8,43 @@
   --accent-color: #ff6c00;
   --header-text-color: #fff;
 }
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
@@ -84,6 +117,8 @@ body {
 }
 
 .hero_title {
+  margin: 0;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;

@@ -11,29 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header_nav">
-        <a href="" class="header_logo"
-          ><img src="./img/logo.svg" alt="logo"
-        /></a>
-        <ul class="header_list list">
-          <li class="header_item">
-            <a href="" class="header_link link">О нас</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link link">Услуги и цены</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link link">Мастера</a>
-          </li>
-          <li class="header--item">
-            <a href="" class="header_link link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="header_nav">
+          <a href="" class="header_logo"
+            ><img src="./img/logo.svg" alt="logo"
+          /></a>
+          <ul class="header_list list">
+            <li class="header_item">
+              <a href="" class="header_link link">О нас</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link link">Услуги и цены</a>
+            </li>
+            <li class="header_item">
+              <a href="" class="header_link link">Мастера</a>
+            </li>
+            <li class="header--item">
+              <a href="" class="header_link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <a href="tel:+380441111111" class="header_link header_link-tel link"
         >+38 044 111 11 11</a
@@ -180,7 +189,7 @@
         </ul>
       </section>
       <section class="gallery">
-        <h2 hidden>gallery</h2>
+        <h2 class="visually-hidden">gallery</h2>
         <p class="pretitle gallary_pretitle">
           На латинском языке “барба” означает “борода”
         </p>
