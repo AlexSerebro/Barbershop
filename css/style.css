@@ -75,6 +75,48 @@ body {
   background: transparent;
 }
 
+.social_link {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: var(--secondary-text-color);
+}
+
+.social_link:hover,
+.social_link:focus {
+  color: var(--accent-color);
+}
+
+.pretitle {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.aftertitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+/*----------------- HEADER-------------- */
+
 .header_link {
   font-style: normal;
   font-weight: 600;
@@ -127,36 +169,35 @@ body {
   color: var(--header-text-color);
 }
 
-.social_link {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
+/*----------- HERO ---------------*/
 
-  color: var(--secondary-text-color);
+.hero {
+  background-color: #555555;
+}
+.hero_list {
+  width: 100px;
 }
 
-.social_link:hover,
-.social_link:focus {
-  color: var(--accent-color);
+.hero_container {
+  display: flex;
 }
 
-.pretitle {
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.hero_right {
+  flex-grow: 1;
+  background-color: var(--secondary-title-color);
+  padding-top: 270px;
+  padding-left: 90px;
+  padding-bottom: 200px;
 }
 
 .hero_pretitle {
   color: var(--third-text-color);
+  margin-bottom: 20px;
 }
 
 .hero_title {
   margin: 0;
+  margin-bottom: 20px;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -169,28 +210,15 @@ body {
   color: var(--primery-title-color);
 }
 
-.aftertitle {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-}
-
 .hero_aftertitle {
   color: var(--fourth-text-color);
+  max-width: 400px;
 }
+
+/* ------ABOUT -----*/
 
 .about_pretitle {
   color: var(--secondary-title-color);
-}
-
-.title {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
 }
 
 .about_title {
@@ -265,15 +293,34 @@ body {
   color: var(--primery-text-color);
 }
 
+/* ------MASTERS -------*/
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background: #f7f7f7;
+}
+
 .masters_pretitle {
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 
 .masters_title {
   color: var(--secondary-title-color);
+  margin-bottom: 44px;
+}
+
+.masters_list {
+  display: flex;
+}
+
+.masters_item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
 }
 
 .masters_name {
+  margin-top: 30px;
+  margin-bottom: 8px;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
