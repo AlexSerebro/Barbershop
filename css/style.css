@@ -106,3 +106,46 @@ hero_link:focus {
 .hero_aftertitle {
   color: var(--fourth-text-color);
 }
+
+.about_pretitle {
+  color: var(--secondary-title-color);
+}
+
+.title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.about_title {
+  color: var(--secondary-title-color);
+}
+
+.about_aftertitle {
+  color: var(--primery-text-color);
+}
+
+.about_text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: var(--primery-text-color);
+}
+
+.services_pretitle {
+  color: var(--third-text-color);
+}
+
+.services_title {
+  color: var(--primery-title-color);
+}
+
+.services_item {
+  color: var(--fourth-text-color);
+}
