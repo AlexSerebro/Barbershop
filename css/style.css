@@ -60,12 +60,19 @@ body {
 }
 
 .btn {
+  width: 160px;
+  height: 40px;
+
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background: transparent;
 }
 
 .header_link {
@@ -81,7 +88,39 @@ body {
   color: var(--accent-color);
 }
 
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_list {
+  display: flex;
+  align-items: center;
+}
+
+.header_wrapper {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header_item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header_logo {
+  margin-right: 70px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header_link-tel {
+  margin-right: 40px;
 }
 
 .header_btn {
