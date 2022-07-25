@@ -55,7 +55,7 @@ body {
   color: var(--header-text-color);
 }
 
-.hero_link {
+.social_link {
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 11px;
@@ -64,8 +64,8 @@ body {
   color: var(--secondary-text-color);
 }
 
-.hero_link:hover,
-hero_link:focus {
+.social_link:hover,
+.social_link:focus {
   color: var(--accent-color);
 }
 
@@ -222,5 +222,60 @@ hero_link:focus {
 }
 
 .gallary_pretitle {
+  color: var(--secondary-text-color);
+}
+
+.online_title {
+  color: var(--primery-title-color);
+}
+
+.contacts_title {
+  color: var(--primery-title-color);
+}
+
+.contact_item {
+}
+
+.contact_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+
+  color: var(--fourth-text-color);
+}
+
+.contact_worktime {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.contact_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+
+  color: var(--fourth-text-color);
+}
+
+.footer_copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  color: var(--fourth-text-color);
+}
+
+.footer_link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
   color: var(--secondary-text-color);
 }
