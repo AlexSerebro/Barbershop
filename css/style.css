@@ -41,10 +41,11 @@ body {
 }
 
 .container {
-  width: 1200px;
+  box-sizing: border-box;
+  width: 1280px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .header {
@@ -216,20 +217,45 @@ body {
 }
 
 /* ------ABOUT -----*/
+.about {
+  padding-top: 165px;
+  padding-bottom: 70px;
+}
+
+.container_about {
+  display: flex;
+}
 
 .about_pretitle {
   color: var(--secondary-title-color);
+  margin-bottom: 25px;
 }
 
 .about_title {
   color: var(--secondary-title-color);
+  margin-bottom: 15px;
 }
 
 .about_aftertitle {
   color: var(--primery-text-color);
+  margin-bottom: 20px;
+}
+
+.about_list {
+  display: flex;
+}
+
+.about_right {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.about_item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about_text {
+  margin-bottom: 25px;
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 14px;
@@ -244,12 +270,30 @@ body {
   color: #303030;
 }
 
+/* ---SERVICES ---*/
+.services {
+  background-color: #303030;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .services_pretitle {
   color: var(--third-text-color);
+  margin-bottom: 20px;
 }
 
 .services_title {
   color: var(--primery-title-color);
+  margin-bottom: 46px;
+}
+
+.services_wrapper {
+  display: flex;
+  padding: 30px 40px;
+}
+
+.services_list {
+  width: 585px;
 }
 
 .services_item {
@@ -372,15 +416,40 @@ body {
   flex-basis: calc((100%-120px) / 4);
 }
 
+/*----- ONLINE----- */
+.wrapper {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #303030;
+}
+
+.online {
+  flex-grow: 1;
+  background-color: #303030;
+}
+
 .online_title {
   color: var(--primery-title-color);
 }
 
-.contacts_title {
+/* -----CONTACT----- */
+
+.contact_title {
+  margin-bottom: 40px;
   color: var(--primery-title-color);
 }
 
-.contact_item {
+.contact {
+  flex-grow: 1;
+  background-color: #555555;
+  padding-left: 100px;
+  padding-right: 255px;
+}
+
+.contact_list {
+  max-width: 270px;
+  margin-bottom: 70px;
 }
 
 .contact_link {
@@ -393,6 +462,8 @@ body {
 }
 
 .contact_worktime {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -411,6 +482,20 @@ body {
   color: var(--fourth-text-color);
 }
 
+/* ----FOOTER------ */
+.footer {
+  background: #f7f7f7;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 57px;
+  padding-bottom: 55px;
+}
+
 .footer_copy {
   font-weight: 600;
   font-size: 11px;
@@ -425,4 +510,12 @@ body {
   line-height: 1.36;
 
   color: var(--secondary-text-color);
+}
+
+.footer_list {
+  display: flex;
+}
+
+.footer_item:not(:last-child) {
+  margin-right: 40px;
 }
