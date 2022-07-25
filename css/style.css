@@ -312,14 +312,21 @@ body {
 
 .masters_list {
   display: flex;
+  margin-right: -30px;
+  margin-top: -30px;
 }
 
-.masters_item:not(:nth-child(3n + 3)) {
+.masters_item {
   margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100%-90px) / 3);
+}
+
+.masters_item-wrapper {
+  padding-top: 30px;
 }
 
 .masters_name {
-  margin-top: 30px;
   margin-bottom: 8px;
   font-family: "Open Sans";
   font-weight: 400;
@@ -342,8 +349,27 @@ body {
   color: #ff6c00;
 }
 
+/* -----GALLERY----- */
+.gallery {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+
 .gallary_pretitle {
   color: var(--secondary-text-color);
+  margin-bottom: 44px;
+}
+
+.gallary_list {
+  display: flex;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+
+.gallary_item {
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100%-120px) / 4);
 }
 
 .online_title {
