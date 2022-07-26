@@ -8,6 +8,13 @@
   --accent-color: #ff6c00;
   --header-text-color: #fff;
 }
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 p,
 h1,
 h2,
@@ -46,6 +53,11 @@ body {
   margin: 0 auto;
   padding-left: 55px;
   padding-right: 55px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
 .header {
@@ -293,55 +305,105 @@ body {
 }
 
 .services_list {
-  width: 585px;
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid var(--third-text-color);
 }
 
 .services_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
   color: var(--fourth-text-color);
+}
+
+.services_item:last-child {
+  margin-bottom: 0;
 }
 
 .services_btn {
   color: #ffffff;
 }
 
-.reasons-count {
-  font-family: "Open Sans";
+/* ----REASONS -----*/
+
+.reasons_container {
+  display: flex;
+}
+
+.reasons_list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons_item {
+  width: 170px;
+  height: 133px;
+  border: 1px solid black;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.reasons_item-dif {
+  padding: 20px;
+  letter-spacing: 0em;
+}
+
+.reasons_count {
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.36;
+  line-height: calc(57 / 42);
   text-align: center;
   letter-spacing: 0.05em;
+  margin-bottom: 6px;
 
   color: var(--secondary-text-color);
 }
 
-.reasons_text {
-  font-family: "Open Sans";
+.reasons_item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons_item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.reasons_item-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
-
   color: var(--secondary-text-color);
 }
 
 .reasons_pretitle {
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 
 .reasons_title {
   color: var(--secondary-title-color);
+  margin-bottom: 20px;
 }
 
 .reasons_aftertitle {
-  color: var(--primery-text-color);
+  color: var(--primary-text-color);
+}
+
+.reasons_left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-shrink: 0;
 }
 
 /* ------MASTERS -------*/
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
-  background: #f7f7f7;
+  background: #9da4bd;
 }
 
 .masters_pretitle {
