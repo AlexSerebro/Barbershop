@@ -377,10 +377,21 @@ body {
 
 .services_item {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
   margin-bottom: 20px;
-
   color: var(--fourth-text-color);
+}
+
+.services_item::before {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.services_type {
+  order: -1;
 }
 
 .services_item:last-child {
