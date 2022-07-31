@@ -13,8 +13,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -54,14 +54,17 @@
     <main>
       <section class="hero">
         <div class="container hero_container">
-          <ul class="hero_list list">
-            <li class="hero_item">
-              <a href="" class="hero_link link social_link">Instagram</a>
-            </li>
-            <li class="hero_item">
-              <a href="" class="hero_link link social_link">Youtube</a>
-            </li>
-          </ul>
+          <div class="hero_left">
+            <ul class="hero_list list">
+              <li class="hero_item">
+                <a href="" class="hero_link link social_link">Instagram</a>
+              </li>
+              <li class="hero_item">
+                <a href="" class="hero_link link social_link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
           <div class="hero_right">
             <p class="pretitle hero_pretitle">A hair salon for men in Kyiv</p>
             <h1 class="hero_title">BarberShop</h1>
@@ -101,13 +104,13 @@
         </div>
       </section>
       <section class="services">
-        <div class="container">
+        <div class="container services_container">
           <p class="pretitle services_pretitle">
             Проведи время в компании лучших мастеров
           </p>
           <h2 class="title services_title">Услуги и цены</h2>
           <div class="services_wrapper">
-            <ul class="services_list list">
+            <ul class="services_list services_list-left list">
               <li class="services_item">
                 <p class="services_type">Мужская стрижка</p>
                 <span class="services_count">от 300 грн.</span>
@@ -125,7 +128,7 @@
                 <span class="services_count">от 200 грн.</span>
               </li>
             </ul>
-            <ul class="services_list list">
+            <ul class="services_list services_list-right list">
               <li class="list services_item">
                 <p class="services_type">Cтрижка у стажера</p>
                 <span class="services_count">от 50 грн.</span>
@@ -247,8 +250,9 @@
           </ul>
         </div>
       </section>
-      <div class="wrapper container">
-        <section class="online">
+      <div class="wrapper">
+        <div class="container flex_container">
+          <section class="online">
           <div>
             <h2 class="title online_title">Онлайн-запись</h2>
           </div>
@@ -290,6 +294,8 @@
             <a href="" class="link social_link footer_link">Youtube</a>
           </li>
         </ul>
+        </div>
+        
       </div>
     </footer>
   </body>
